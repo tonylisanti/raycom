@@ -1,0 +1,1281 @@
+body {
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	font-size: 12px;
+	 background: url(../img/background.jpg) no-repeat center top #8E2311; 
+	background:#f5f5f5 url(../img/background_bottom.png) repeat-x scroll center bottom;
+}
+#bg_wrapper {
+	
+	background:#f5f5f5 url(../img/background_top.png) repeat-x scroll center top;
+	height:500px;
+}
+a {
+	color:#990000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration:underline;
+}
+p {
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+#wrapper {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+#header_bg {
+	background: url(../img/bg_top.png) no-repeat;
+	position: relative;
+	width: 1000px;
+	height: 164px;
+	margin: -164px auto 0;
+	z-index: 10;
+}
+#header {
+	position: relative;
+	width: 1000px;
+	height: 164px;
+	margin: 0 auto;
+	z-index: 999;
+}
+#header a.logo {
+	left:5px;
+	padding:50px 120px;
+	position:absolute;
+	top:15px;
+}
+#header #top_ad {
+	margin-left:260px;
+	position:relative;
+	margin-top:22px;
+	float: left;
+	width:728px;
+	height:90px;
+}
+#header #menulist_root {
+	padding-top:19px;
+	position:relative;
+	float: left;
+	height: auto;
+	z-index:100;
+}
+#header #menulist_root li {
+	background: url(../img/bg_nav.png) no-repeat;
+	float: left;
+	/*
+  padding:0 26px;
+  */
+  padding:0 28px;
+	text-transform: uppercase;
+}
+#header #menulist_root #menuitem_1 {
+	background: none;
+}
+#header #menulist_root li a {
+	color:#FFFFFF;
+	float:left;
+	font-weight:bold;
+	line-height:32px;
+	text-decoration:none;
+}
+#header #menulist_root li.nav-on a, #header #menulist_root li a:hover {
+	color: #68BCFF;
+}
+#header #menulist_root ul {
+	background:#CEE8FF url(../img/bg_subnav.jpg) repeat scroll 0 0;
+	border-bottom:3pt solid #292929;
+	border-left:3pt solid #292929;
+	border-right:3pt solid #292929;
+	display:none;
+	margin-left:-24px;
+	margin-top:30px;
+	padding:0 0 6px;
+	position:absolute;
+	z-index: 1500;
+}
+#header #menulist_root li.nav-on ul {
+	display: block;
+}
+ul#menulist_7 {
+	margin-left:-161px !important;
+	width:250px !important;
+}
+ul#menulist_7 ul li a {
+	float: right !important;
+}
+#header #menulist_root ul div.subnav_shadow {
+	background: url(../img/bg_subnav_top.jpg) repeat-x top;
+	height: auto;
+	width: auto;
+}
+#header #menulist_root ul li {
+	clear:both;
+	float:none;
+	padding: 6px 12px 0;
+	background-image: none;
+	list-style:none;
+	font-size: 11px;
+	height: 18px;
+}
+#header #menulist_root ul li a {
+	clear:both;
+	color:#000000 !important;
+	line-height:20px;
+	padding-top:5px;
+}
+#header #menulist_root li ul li.nav-on a:hover {
+	color: black;
+	text-decoration: underline;
+}
+#ticker {
+	float:left;
+	height:35px;
+	margin-bottom:8px;
+	margin-top:25px;
+	position:relative;
+	text-align:center;
+	width:1000px;
+	z-index:75;
+}
+#features_bg {
+	background: url(../img/bg_features_2.png) no-repeat;
+	position: relative;
+	width: 1000px;
+	height: 209px;
+	margin: -209px auto 0;
+	z-index: 10;
+}
+#features {
+	position: relative;
+	width: 1000px;
+	height: 209px;
+	margin: 0 auto;
+	z-index: 500;
+}
+/* 
+	root element for the scrollable. 
+	when scrolling occurs this element stays still. 
+*/
+div.scrollable {
+	/*  border:1px outset #CCCCCC;*/
+  float:left;
+	height:126px;
+	/*  margin-left:11px;*/
+  overflow:hidden;
+	position:relative;
+	width:950px;
+	margin-left:0px;
+}
+div.scroll-right {
+	width:25px;
+	height:126px;
+	float:left;
+	cursor: pointer;
+}
+div.scroll-left {
+	width:25px;
+	height:126px;
+	float:left;
+	cursor: pointer;
+}
+/* 
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a super large width to accomodate scrollable items.
+	it's enough that you set width and height for the root element and
+	not for this element.
+*/
+div.scrollable div.items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;/* decoration */
+/*  margin-left:10px;*/
+}
+/* single scrollable item */
+div.scrollable div.items div {
+	float:left;
+	height:125px;
+	margin-left:10px;
+	width:310px;
+	text-align: center;
+	font-family: 'bitstream vera sans';/*  border:1px outset #ccc;
+  background-color: #ddd;*/
+/*  margin-right: 20px; */
+/*  -moz-border-radius:5px;*/
+}
+/*div.scrollable div.items div.active {
+  border:1px inset #ccc;    
+  background-color:#fff;
+}*/
+
+#feature {
+	background: url(../img/bg_features_divider.png) left no-repeat;
+	float:left;
+	height:125px;
+	margin-left: -2px;
+	width:320px;
+	text-align: center;
+	color:#fff;
+}
+#feature img {
+	float:left;
+	margin:10px 0 0 10px;
+	padding-right: 6px;
+}
+#feature h2 {
+	color:#FFFFFF;
+	float:left;
+	font-size:13px;
+	font-weight:bold;
+	margin-top:15px;
+	text-align:center;
+	width:180px;
+}
+#feature p {
+	float: left;
+	width: 183px;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 18px;
+	font-size: 11px;
+}
+#feature a {
+	color: #0089e5;
+}
+#feature a:hover {
+	text-decoration: underline;
+}
+#team_selector_bg {
+	background: url(../img/bg_teams.png) no-repeat;
+	position: relative;
+	width: 1000px;
+	height: 109px;
+	margin: -109px auto 0;
+	z-index: 10;
+}
+#team_selector {
+	position: relative;
+	width: 1000px;
+	height: 109px;
+	margin: 0 auto;
+	z-index: 150;
+}
+#team_selector ul.menu_teams {
+	float: left;
+	padding-left: 12px;
+	padding-top: 27px;
+	position: relative;
+	width: 1000px;
+}
+#team_selector ul.menu_teams li {
+	display:block;
+	float:left;
+	height:61px;
+	margin-right:12px;
+}
+#team_selector ul.menu_teams li a {
+	color:transparent;
+	display:block;
+	height:61px;
+	text-indent:-9999px;
+	text-transform:capitalize;
+	width:70px;
+}
+ul.menu_teams li.active a {
+	margin-left:-2px;
+	margin-right:-7px;
+	width:76px !important;
+}
+ul.menu_teams li.item385 a {
+	background: url(../img/teams_bc.jpg) no-repeat;
+}
+ul.menu_teams li.item386 a {
+	background: url(../img/teams_clemson.jpg) no-repeat;
+}
+ul.menu_teams li.item387 a {
+	background: url(../img/teams_duke.jpg) no-repeat;
+}
+ul.menu_teams li.item388 a {
+	background: url(../img/teams_fsu.jpg) no-repeat;
+}
+ul.menu_teams li.item389 a {
+	background: url(../img/teams_gtech.jpg) no-repeat;
+}
+ul.menu_teams li.item390 a {
+	background: url(../img/teams_md.jpg) no-repeat;
+}
+ul.menu_teams li.item384 a {
+	background: url(../img/teams_unc.jpg) no-repeat;
+}
+ul.menu_teams li.item392 a {
+	background: url(../img/teams_ncsu.jpg) no-repeat;
+}
+ul.menu_teams li.item391 a {
+	background: url(../img/teams_theu.jpg) no-repeat;
+}
+ul.menu_teams li.item393 a {
+	background: url(../img/teams_uva.jpg) no-repeat;
+}
+ul.menu_teams li.item394 a {
+	background: url(../img/teams_vtech.jpg) no-repeat;
+}
+ul.menu_teams li.item395 a {
+	background: url(../img/teams_wf.jpg) no-repeat;
+}
+ul.menu_teams li a:hover {
+	background-position: 0 -61px;
+}
+#center_top {
+	background: url(../img/bg_main_top.jpg) no-repeat;
+	width: 1000px;
+	height:22px;
+	position: relative;
+	float: left;
+	z-index: 99;
+}
+#center_bottom {
+	background: url(../img/bg_main_bottom.png) no-repeat;
+	width: 1000px;
+	height: 13px;
+	position: relative;
+	float: left;
+}
+#home_center {
+	background:transparent url(../img/bg_main_repeat.jpg) repeat-y scroll 0 0;
+	margin:0 auto;
+	min-height:560px;
+	position:relative;
+	width:1000px;
+}
+#sponsor_header {
+	position: relative;
+	float: left;
+	margin: 0 auto;
+	width: 755px;
+}
+#info_center {
+	float:left;
+	height:543px;
+	margin-left:5px;
+	margin-right:12px;
+	margin-top:-8px;
+	position:relative;
+	width:212px;
+}
+#slideshow {
+	float: left;
+	height: 326px;
+}
+#opportunity_space {
+	/*
+  background-color:#575757;
+  */
+  border-top:10px solid #575757;
+	float:left;
+	height:217px;
+	margin-left:7px;
+	width:198px;/*
+  background: url(../img/bg_poll.jpg) no-repeat;
+  */
+}
+#sponsor {
+	background: url(../img/bg_video.jpg) no-repeat;
+	float:left;
+	height:534px;
+	position:relative;
+	width:758px;
+}
+#video_holder {
+	float: left;
+	height: 534px;
+	position: relative;
+	width: 758px;
+}
+/****************************** INTERIOR STYLES */
+
+#center_top_interior {
+	background: url(../img/bg_main_top_interior.png) no-repeat;
+	width: 1000px;
+	height: 31px;
+	position: relative;
+	float: left;/*  border: 1pt solid white;*/
+}
+#center_bottom_interior {
+	background: url(../img/bg_main_bottom_interior.png) no-repeat;
+	width: 1000px;
+	height: 13px;
+	position: relative;
+	float: left;
+}
+#interior_center {
+	background: url(../img/bg_main_repeat_interior.jpg) repeat-y;
+	position: relative;
+	width: 1000px;
+	min-height: 525px;
+	margin: 0 auto;
+	float:left;
+}
+#interior_content {
+	background-color:#FFFFFF;
+	float:left;
+	margin-bottom:2px;
+	margin-left:18px;
+	margin-top:-2px;
+	min-height:525px;
+	position:relative;
+	width:964px;
+}
+#interior_header h2 {
+	color: #FFFFFF;
+	font-size: 25px;
+	margin-left: 20px;
+	font-weight: bold;
+}
+#page {
+	margin-top: 15px;
+	margin-left:15px;
+	width:930px;
+}
+#page p.buttonheading {
+	float: right;
+}
+#page p.buttonheading a {
+	padding: 5px 8px 0;
+}
+/**************************** FOOTER STYLES */
+
+#footer_bg {
+	background: url(../img/bg_footer.png) no-repeat;
+	position: relative;
+	width: 1000px;
+	height: 337px;
+	margin: -337px auto 0;
+	z-index: 10;
+	float:left;
+}
+#footer {
+	position: relative;
+	width: 1000px;
+	height: 337px;
+	margin: 0 auto;
+	z-index: 999;
+	float:left;
+}
+#footer ul.footer_features {
+	display:block;
+	float:left;
+	height:185px;
+	margin-left:23px;
+	margin-top:36px;
+	position:relative;
+	width:1000px;
+}
+#footer ul.footer_features li {
+	display:inline;
+	float:left;
+	margin-right:11px;
+}
+#footer a:link, #footer a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+#footer_ad {
+	float:left;
+	height:90px;
+	margin:15px 0 0 136px;
+	position:relative;
+	width:728px;
+}
+h1.beta {
+	color:#BCBCBC;
+	display:inline;
+	float:right;
+	font-size:15px;
+	font-weight:bold;
+	left:915px;
+	position:absolute;
+	display:none;
+}
+/********* TL *********/
+#page {
+	padding-bottom:15px;
+}
+h2.general {
+	background:url('../img/bg_container_header.jpg') repeat-x top;
+	border-bottom:1px dashed #999;
+	padding:12px 0px 7px 0px;
+	margin:20px 0 10px 0;
+	font: 22px Georgia, serif;
+	font: 16px Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	letter-spacing: -0.2px;
+	width:100%;
+	color:#A72121;
+	color:#AF3535;
+	text-align:left;
+	text-indent:10px;
+}
+.buttonheading {
+	display:none;
+}
+.clearDiv {
+	clear:both;
+	font-size:1px;
+	height:1px;
+}
+/********* Section/Category/Article specific *********/
+.articleId_18 #page, .articleId_22 #page, .articleId_380 #page, .articleId_379 #page, .articleId_378 #page, .articleId_191 #page, .articleId_383 #page {
+	margin-top:-10px;
+}
+.articleId_354 #page, .articleId_406 #page {
+	padding-bottom:80px;
+}
+.articleId_372 #page {
+*padding-bottom:60px;
+}
+.articleId_287 .contentheading {
+	display:none;
+}
+
+/********* Tables ********/
+.broadcaster_bios td {
+	vertical-align:top;
+}
+.broadcaster_bios img {
+	width:110px;
+	height:176px;
+	margin:0px 10px;
+}
+.affiliate_listings_header {
+	margin-top:20px;
+	background:url(../img/affiliate_listing_header_bg.jpg) repeat-x top center;
+	border-left:1px solid #E0E0E0;
+	border-right:1px solid #E0E0E0;
+	width:100%;
+}
+/******** img *******/
+img.general {
+	padding:3px;
+	background:#eee;
+	border:1px solid #ccc;
+	margin:2px;
+}
+/********* JForms *********/
+.jform_container_caption {
+	width:595px;
+	background: url('../img/bg_jform_container_caption.jpg') no-repeat center top;
+	text-align:left;
+	margin:0 auto;
+	padding:3px 0 3px 25px;
+	color:#555;
+	font-weight:bold;
+}
+.jform_container {
+	width:602px;
+	text-align:left;
+	margin:0 auto;
+	padding:0px 8px 8px 8px;
+}
+.jform div.clear {
+	padding:5px 0 0 0;
+	_padding:0 0 0 0;
+}
+label.jftextbox {
+	display:inline-block;
+	float:left;
+	width:240px;
+}
+input.jftextbox {
+	display:inline-block;
+	float:left;
+	width:300px;
+}
+label.jftextarea {
+	display:inline-block;
+	float:left;
+	width:250px;
+}
+textarea.jftextarea {
+	display:inline-block;
+	float:left;
+	width:300px;
+}
+.jform {
+	padding:0 0 0 30px;
+	width:600;
+	margin:0 auto;
+}
+input, textarea, select {
+	border:1px solid #ccc;
+	padding:4px 0 0 4px;
+}
+input {
+	background:url('../img/bg_frm_input_text.jpg') no-repeat top left;
+ *background:none;
+}
+select {
+	background:#fff url('../img/bg_frm_input_text.jpg') no-repeat top left;
+ *background:none;
+}
+textarea {
+	background:url('../img/bg_frm_input_textarea.jpg') no-repeat top left;
+ *background:none;
+}
+.jfbutton {
+	background:url('../img/bg_input_button.jpg') no-repeat top left;
+	color:#990000;
+	border:1px solid #990000;
+	padding:0;
+	cursor:hand;
+	padding:0 0 2px 0;
+ *padding:0;
+	margin:10px 0 0 170px;
+}
+.error-message {
+	margin:0 0 1px 170px;
+	border:0px solid #ff0000;
+	color:#ff0000;
+}
+.jform_req_field_key {
+	margin:0px 0 10px 0;
+	padding:0 5px;
+	text-align:right;
+}
+.jform_req_field_indicator {
+	color:#ff0000;
+}
+#companion-ad {
+	/*
+	background:url(../img/banner_homepage.jpg) no-repeat center center;
+	*/
+	position:absolute;
+	width:300px;
+	height:100px;
+	border:1px solid white;
+	top:16px;
+	right:16px;
+}
+/********* Blog *********/
+.blog {
+	margin:15px;
+}
+.sectionId_31 .componentheading {
+	display:none;
+}
+.blog .leading, .blog .article_row {
+	margin-bottom:25px;
+	padding:16px 13px 12px 13px;
+	background:#fff;
+	border:0px solid #E0E0E0;
+	background:url('http://www.raycomsports.com/img/bg_content_container_large.png') no-repeat;	
+}
+.blog .contentheading {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:15px;
+	border-bottom:2px ridge #333;
+	*border-bottom:1px solid #333;
+	width:100%;
+	padding:0 0 5px 0;	
+}
+.blog .latest_news_caption {
+	color:#535353;
+	font-style:italic;
+	font-size:12px;
+}
+.iteminfo {
+	color:#666;
+	font-size:10px;
+	text-align:left;
+}
+.blog_more {
+	display:none;
+}
+.readon {
+	float:right;
+	color:#093CEF;
+}
+.readon:hover {
+	text-decoration:underline;
+}
+.blog .counter {
+	float:left;
+	display:inline;
+}
+.blog .pagination {
+	float:left;
+	display:inline;
+}
+.blog .pagination li {
+	display:inline;
+	padding:2px 4px;
+	margin:0 5px;
+	background:#eee;
+	border:1px solid #ccc;
+	font-size:12px;
+}
+.blog .pagination a {
+	color:#093CEF;
+}
+.blog .pagination a:hover {
+	text-decoration:underline;
+}
+/********* fieldsets *********/
+fieldset.general {
+	border:none;
+	border-top:1px solid #AAAAAA;
+	margin:0;
+	padding:5px 0 0 5px;
+}
+fieldset.general legend {
+	border:1px solid #AAAAAA;
+	background:#EEEEEE;
+	color:#464545;
+	padding:1px 4px;
+}
+/*
+    ColorBox Core Style
+    The following rules are the styles that are consistant between all ColorBox themes
+*/
+#colorbox, #cboxOverlay, #cboxWrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100000;
+	overflow:hidden;
+}
+#cboxOverlay {
+	position:fixed;
+	width:100%;
+	height:100%;
+}
+#cboxMiddleLeft, #cboxBottomLeft {
+	clear:left;
+}
+#cboxContent {
+	position:relative;
+	overflow:visible;
+}
+#cboxLoadedContent {
+	overflow:auto;
+}
+#cboxLoadedContent iframe {
+	display:block;
+	width:100%;
+	height:100%;
+	border:0;
+}
+#cboxTitle {
+	margin:0;
+}
+#cboxLoadingOverlay, #cboxLoadingGraphic {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow {
+	cursor:pointer;
+}
+/* 
+    ColorBox example user style
+    The following rules are ordered and tabbed in a way that represents the order/nesting of the generated HTML, 
+    in hope that this will make the relationship easier to understand. Thanks, jack@colorpowered.com
+*/
+#cboxOverlay {
+	background:url(../img/overlay.png) 0 0 repeat;
+}
+#colorbox {
+}
+#cboxTopLeft {
+	width:21px;
+	height:21px;
+	background:url(../img/controls.png) -100px 0 no-repeat;
+	_background:url(../img/controls.jpg) -100px 0 no-repeat;
+}
+#cboxTopRight {
+	width:21px;
+	height:21px;
+	background:url(../img/controls.png) -129px 0 no-repeat;
+	_background:url(../img/controls.jpg) -129px 0 no-repeat;
+}
+#cboxBottomLeft {
+	width:21px;
+	height:21px;
+	background:url(../img/controls.png) -100px -29px no-repeat;
+	_background:url(../img/controls.jpg) -100px -29px no-repeat;	
+}
+#cboxBottomRight {
+	width:21px;
+	height:21px;
+	background:url(../img/controls.png) -129px -29px no-repeat;
+	_background:url(../img/controls.jpg) -129px -29px no-repeat;	
+}
+#cboxMiddleLeft {
+	width:21px;
+	background:url(../img/controls.png) left top repeat-y;
+	_background:url(../img/controls.jpg) left top repeat-y;	
+}
+#cboxMiddleRight {
+	width:21px;
+	background:url(../img/controls.png) right top repeat-y;
+	_background:url(../img/controls.jpg) right top repeat-y;	
+}
+#cboxTopCenter {
+	height:21px;
+	background:url(../img/border.png) 0 0 repeat-x;
+	_background:url(../img/border.jpg) 0 0 repeat-x;	
+}
+#cboxBottomCenter {
+	height:21px;
+	background:url(../img/border.png) 0 -29px repeat-x;
+	_background:url(../img/border.jpg) 0 -29px repeat-x;	
+}
+#cboxContent {
+	background:#fff;
+}
+#cboxLoadedContent {
+	margin-bottom:28px;
+	color:#000;
+}
+#cboxLoadedContent a {
+	color:#990000;
+	font-weight:bold;
+	text-decoration:underline;
+}
+#cboxLoadedContent a:hover {
+	text-decoration:none;
+}
+#cboxTitle {
+	position:absolute;
+	bottom:3px;
+	left:0;
+	text-align:center;
+	width:100%;
+	color:#949494;
+	_color:#474747;	
+}
+#cboxCurrent {
+	position:absolute;
+	bottom:3px;
+	left:58px;
+	color:#949494;
+	_color:#474747;
+}
+#cboxSlideshow {
+	position:absolute;
+	bottom:3px;
+	right:30px;
+	color:#0092ef;
+}
+#cboxPrevious {
+	position:absolute;
+	bottom:0;
+	left:0px;
+	background:url(../img/controls.png) -75px 0px no-repeat;
+	width:25px;
+	height:25px;
+	text-indent:-100000px;
+}
+#cboxPrevious.hover {
+	background-position:-75px -25px;
+}
+#cboxNext {
+	position:absolute;
+	bottom:0;
+	left:27px;
+	background:url(../img/controls.png) -50px 0px no-repeat;
+	width:25px;
+	height:25px;
+	text-indent:-100000px;
+}
+#cboxNext.hover {
+	background-position:-50px -25px;
+}
+#cboxLoadingOverlay {
+	background:url(../img/loading_background.png) center center no-repeat;
+}
+#cboxLoadingGraphic {
+	background:url(../img/loading.gif) center center no-repeat;
+}
+#cboxClose {
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:url(../img/controls.png) -25px 0px no-repeat;
+	_background:url(../img/controls.jpg) -25px 0px no-repeat;	
+	width:25px;
+	height:25px;
+	text-indent:-100000px;
+}
+#cboxClose.hover {
+	background-position:-25px -25px;
+}
+
+
+
+.hidden {
+	display:none;
+}
+#RSSFeedContainer {
+	float:left;
+	margin:0 10px 15px 0;
+	width:406px;
+	border:1px solid #E4E4E6;
+}
+.article_blog_rss {
+	height:270px;
+	overflow:auto;
+	padding:0 8px 8px 8px;
+}
+.article_blog {
+	padding:8px 0 0 0;
+	width:370px;
+}
+.article_blog_title a {
+	font-size:13px;
+	font-weight:bold;
+	color:#5B5B5B;
+	text-decoration:none;
+}
+.article_blog_title a:hover {
+	text-decoration:underline;
+}
+.article_blog_date {
+	color:#999;
+	font-size:12px;
+	padding:4px 0;
+}
+.article_blog_description {
+	font-size:12px;
+	color:#414141;
+	text-align:10px;
+}
+.article_blog_read_more {
+	font-size:12px;
+	color:#414141;
+	text-align:right;
+}
+
+/***** Poller *****/
+.poller {
+	height:210px;
+	width:196px;
+	padding:0px;
+	color:#fff;
+	background:url(../img/bg_poll_3.jpg) no-repeat top left;
+	overflow:hidden;
+}
+.poller input {
+	border:none;
+	overflow:hidden;	
+}
+#poller_header {
+	margin:8px 8px 0px 8px;
+	width:182px;
+	/* height:36px; */
+	background:url(../img/bg_poll_header.png	) no-repeat top left;
+	background:none;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;	
+}
+.pollerTitle, .result_pollerTitle {
+	padding:0px 8px;
+ *padding:0px 8px 0px 8px;
+	font-weight:bold;
+	overflow:hidden;	
+}
+#poller_title_hr {
+	margin:-5px auto 10px auto;
+	padding:0;
+	height:2px;
+	width:150px;
+	color:#999;
+	display:none;
+	overflow:hidden;	
+}
+.pollerOption {
+	margin:0;
+	padding:0px 2px 5px 10px;
+	overflow:hidden;	
+}
+
+.result_pollerOption {
+	margin:0px 2px 5px 20px;
+	overflow:hidden;
+	padding-bottom:4px;
+	padding-top:4px;
+	line-height:14px;
+}
+.result_pollerOption p {
+	line-height:0px;
+	/* padding-bottom:4px; */
+	padding-top:4px;	
+}
+.pollerOption input, .result_pollGraph {
+	margin:-2px 4px 0 6px;
+ *margin:-5px 4px 0 6px;
+	overflow:hidden; 
+}
+.poller_bottons {
+	padding:10px 0 0 0;
+	text-align:center;
+	overflow:hidden;	
+}
+#poller_btn_vote, #poller_btn_result {
+	color:#fff;
+	padding:1px;
+	font-size:11px;
+	font-weight:bold;
+	background:url(../img/bg_poll_btn.png) no-repeat top left;
+	text-align:center;
+	height:22px;
+	width:65px;
+	overflow:hidden;	
+}
+#poller_btn_vote {
+	margin-right:8px;
+	overflow:hidden;	
+}
+/*
+.pollerTitle { visibility:hidden; }
+.pollerOption { color:#333; }
+*/
+/***** End Poller *****/
+
+/******* Article Menu ********/
+.article_menu {
+	margin:-10px 0 15px 0;
+}
+.article_menu .pipe {
+	margin:0 10px;
+}
+.article_menu a {
+	display:inline-block;
+	border:1px solid #CCCCCC;
+	padding:1px 4px;
+	color:#333;
+	background:#eee;
+}
+.article_menu a:hover {
+	border:1px solid #990000;
+	padding:1px 4px;
+	color:#990000;
+	background:#F6E8E8;
+	text-decoration:none;
+	cursor:pointer;
+}
+#menuitem_1_8 { display:none }
+
+#info_center {
+	/* height:543px; */
+	height:500px;
+}
+#opportunity_space {
+  height:200px;
+}
+
+#preview{
+	position:absolute;
+	border:1px solid #ccc;
+	background:#333;
+	padding:5px;
+	display:none;
+	color:#fff;
+	z-index:1000;
+	}
+#page a {
+	color:#093CEF;
+}
+#page h2 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:15px;
+	border-bottom:2px ridge #333;
+	*border-bottom:1px solid #333;
+	width:100%;
+	padding:0 0 5px 0;
+}
+.container {	
+	margin-bottom:25px;
+	padding:15px 15px 20px 15px;	
+	background:url('http://www.raycomsports.com/img/bg_content_container_2.png') no-repeat;
+	width:580px;
+}
+.container_error {
+	margin-bottom:25px;
+	padding:15px 15px 20px 15px;	
+	background:url('http://www.raycomsports.com/img/bg_content_container_error.png') no-repeat;
+	width:580px;	
+}
+.container_error h2 {
+	margin-bottom:0px;
+}
+.container_large {
+	margin-bottom:25px;
+	padding:16px 13px 12px 13px;
+	background:#fff;
+	border:0px solid #E0E0E0;
+	background:url('http://www.raycomsports.com/img/bg_content_container_large_2.png') no-repeat;
+}
+.leftContainer {
+	width: 610px; float: left;
+	margin-top:-6px;
+}
+.right_content {
+	float:right;
+	margin:0 0 -10px 10px;
+	text-align:center;
+	width:308px;
+}
+.container_small {
+	background:transparent url(http://www.raycomsports.com/img/bg_container_small.png) no-repeat scroll 0 0;
+	border:0 solid #E0E0E0;
+	margin:-3px 0 25px 5px;
+	padding:15px 15px 15px 15px;
+	width:268px;
+}
+.container_sidebar {
+	background:transparent url(http://www.raycomsports.com/img/bg_container_sidebar.png) no-repeat scroll 0 0;
+	clear:both;
+	margin:0 0 25px 5px;
+	padding:15px;
+	width:278px;
+}
+
+#middle {
+	background: url(../img/bg_middle.png) no-repeat;
+	width: 954px;
+	height: 324px;
+	position: relative;
+	float: left;
+	padding:36px 23px 0px 23px;
+}
+#middle_wnplayer {
+	float:left;	
+	width:470px;
+	height:300px;
+	margin:0 10px 0 0;
+}
+#middle_blogs {
+	float:left;
+	height:279px;	
+	width:453px;
+	padding:10px;
+	/*
+	background:#282627;
+	border-top:1px solid #4E4E4E;
+	border-left:1px solid #5A5A5A;
+	*/
+	color:#333;;	
+}
+#middle_blogs_title {
+	font-size:13px;font-weight:bold;
+}
+#middle blogs a {
+	font-weight:bold;
+	color:#093CEF;
+}
+#middle blogs a:hover {
+	text-decoration:underline;
+	font-weight:bold;
+	color:#093CEF;	
+}
+#middle blogs .updated {
+	font-style:italic;
+	font-size:11px;
+	margin:5px 0;
+}
+
+/***** FORMS ******/
+.subscriber_form .container_field {
+	margin:0 0 7px 0px;		
+}
+.subscriber_form .label {
+	margin:0;
+	text-align:left;
+	width:160px;
+	display:block;
+	float:left;
+	padding:4px 0 0 20px;
+}
+.subscriber_form .field_text {
+	display:block;
+	float:left;
+	width:230px;
+}
+.subscriber_form .field_radio {
+	border:none;
+}
+.subscriber_form .container_buttons {
+	padding:10px 0 0 0;
+	border-top:1px dashed #ccc;
+	text-align:center;
+	margin-top:10px;
+}
+.subscriber_form .container_buttons .button_submit {
+	margin:0px;
+	padding:0px;
+}
+.subscriber_form .field_option, .subscriber_form field_text {
+	padding:0px;	
+}
+.subscriber_form .button_submit {
+	margin:0px;
+	padding:0px 0 2px 0;
+	background:url(http://www.raycomsports.com/img/bg_button_submit.png) no-repeat;
+	border:none;
+	height:22px;
+	width:100px;
+	color:#fff;
+	font-size:12px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+}
+.frm_poll .container_buttons {
+	padding:10px 0 0 0;
+	border-top:1px dashed #ccc;
+	text-align:center;
+	margin-top:10px;
+}
+.frm_poll .button_vote {
+	margin:0px;
+	padding:0px 0 2px 0;
+	background:url(http://www.raycomsports.com/img/bg_button_vote.png) no-repeat;
+	border:none;
+	height:22px;
+	width:80px;
+	color:#fff;
+	font-size:12px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:bold;
+}
+#opportunity_space {
+	overflow:hidden;	
+}
+#opportunity_space a {
+	display:block;
+	background:url(http://www.raycomsports.com/img/opportunity_att_head_to_head_fan_vote.gif) no-repeat;
+	height:210px;
+	width:210px;
+	padding:0 0 15px 0px;
+}
+#opportunity_space a:hover {
+	text-decoration:none;
+}
+#getaway_giveaway_link {
+	display:block;
+	background:url(http://www.raycomsports.com/img/getaway_giveaway_1.png) no-repeat;
+	height:197px;
+	width:210px;
+	padding:0 0 15px 0px;
+}

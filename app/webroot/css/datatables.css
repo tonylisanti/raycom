@@ -1,0 +1,93 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * DataTables features
+ */
+.dataTables_wrapper {
+	clear: both;
+	width:100%;
+}
+
+.dataTables_length {
+	margin:0 30px 2px 12px;
+	*margin:0 30px 2px 7px;
+	float:left;
+}	
+.dataTables_filter {
+	float:left;
+	clear:right;
+	margin:0 0 2px 0;
+}
+#dt_vertical {
+	width:100%;
+	clear:both;
+	margin:0px 0 0 0;
+	font-family:Lucida, sans-serif;
+	border:1px solid #dfdfdf;
+}
+.dataTables_info {
+	display:inline-block;
+	width:200px;
+	float:left;
+	padding:4px 0 4px 12px;
+}
+
+.dataTables_paginate {
+	width: 500px;
+	float:right;
+	text-align:right;
+	padding:4px 0px 4px 0;
+	display:inline-block;
+}
+div.dataTables_paginate span.paginate_button,
+div.dataTables_paginate span.paginate_active {
+	border: 1px solid #aaa;
+	/*
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	*/
+	padding: 2px 5px;
+	margin: 0 3px;
+	cursor: pointer;
+	*cursor: hand;
+}
+div.dataTables_paginate span.paginate_button {
+	background-color: #ddd;
+}
+div.dataTables_paginate span.paginate_button:hover {
+	background-color: #ccc;
+}
+div.dataTables_paginate span.paginate_active {
+	border:1px solid #990000;
+	color:#990000;
+	background-color: #F6E8E8;
+}
+
+#dt_vertical th {
+	background:#E8E8E8;
+	color:#990000;
+	cursor:pointer;
+	cursor:hand;
+	font-weight:bold;
+	margin:2px;
+	padding:4px;
+}
+#dt_vertical td {
+	margin:2px;
+	padding:4px;
+}
+#dt_vertical tbody tr.odd {
+	background:#F5F5F5;	
+}
+#dt_vertical tbody tr.even {
+	background:#fff;	
+}
+
+.tbl_fbss_archives_episodes {
+	width:760px;
+	background:#fff;
+}
+.tbl_fbss_archives_episodes th {
+	background:#eee;
+}
+.tbl_fbss_archives_episodes td {
+	background:#E8E8E8;
+}

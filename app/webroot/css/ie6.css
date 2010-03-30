@@ -1,0 +1,158 @@
+#wrapper{
+  margin-top: -110px;
+}
+#header a.logo{
+  left:5px;
+  padding: 0;
+  position:absolute;
+  top: 125px;
+  display: block;
+  width: 245px;
+  height: 108px;
+}
+
+#header #menulist_root{
+  margin-top: 2px;
+}
+
+#header #menulist_root li{
+  background: url(../images/bg_nav.gif) no-repeat;
+}
+
+#header #top_ad{
+  margin-left:130px;
+}
+
+#header #menulist_root {
+  padding-top: 15px;
+  margin-left: 1px;
+}
+
+#header #menulist_root li{
+  padding:0 28px;
+}
+
+#header #menulist_root ul li{
+  width:expression(188 + "px");
+}
+
+#menulist_1{
+  margin-left: -132px !important;
+}
+
+#menulist_2{
+  margin-left: -130px !important;
+}
+
+#menulist_3{
+  margin-left: -116px !important;
+}
+
+#menulist_4{
+  margin-left: -104px !important;
+}
+
+#menulist_5{
+  margin-left: -124px !important;
+}
+
+#menulist_6{
+  margin-left: -96px !important;
+}
+
+ul#menulist_7{
+  float: left !important;
+  margin-left: -215px !important;
+}
+
+#features_bg{
+  background: url(../images/bg_features.png) no-repeat;
+	position: relative;
+	width: 1000px;
+	height: 209px;
+/*  margin: -400px auto 0;*/
+	z-index: 10;
+}
+
+#features{
+  margin-top: -1px;
+}
+
+#feature{
+/*  margin-left:5px;*/
+}
+
+#info_center{
+/*  z-index: 999;
+  margin-left: 0px;
+  width: 214px;
+*/
+  float:left;
+  height:543px;
+  margin-left:1px;
+  margin-right:11px;
+  margin-top:-8px;
+  position:relative;
+  width:212px;
+  z-index: 999;
+  position: relative;
+}
+
+#slideshow{
+  float: left;
+  position: relative;
+f}
+
+#opportunity_space {
+  margin-top: -2px;
+  background-color:#575757;
+  float:left;
+  height:217px;
+  margin-left:4px;
+  width:200px;
+/*  border: 1pt solid red;*/
+/*  margin-top: -110px;*/
+}
+
+#slideshow{
+  margin-left: 4px;
+}
+
+#sponsor{
+  margin-top: -5px;
+}
+
+#interior_header{
+  margin-top: -5px;
+}
+
+#interior_center{
+  margin-top: 0px;
+  min-height: 525px;
+  height: auto !important;
+  height: 525px;
+}
+
+#interior_content{
+  margin-left:9px;
+  min-height: 525px;
+  height: auto !important;
+  height: 525px;
+}
+
+#center_bottom{
+  margin-top: -5px;
+}
+
+#footer{
+  margin-top: -2px;
+}
+
+#footer ul.footer_features {
+ margin-left: 12px; 
+}
+
+#footer_ad{
+  margin-top: 6px;
+  margin-left: 68px;
+}
